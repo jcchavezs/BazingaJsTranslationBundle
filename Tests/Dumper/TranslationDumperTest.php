@@ -190,25 +190,25 @@ JSON;
             $this->assertFileNotExists($this->target . '/translations/' . $file);
         }
 
-        $this->assertEquals(self::JS_EN_MESSAGES_TRANSLATIONS, file_get_contents($this->target . '/translations/messages/en.js'));
+        $this->assertEquals(json_decode(self::JS_EN_MESSAGES_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/messages/en.js')));
 
-        $this->assertEquals(self::JS_FR_MESSAGES_TRANSLATIONS, file_get_contents($this->target . '/translations/messages/fr.js'));
+        $this->assertEquals(json_decode(self::JS_FR_MESSAGES_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/messages/fr.js')));
 
-        $this->assertEquals(self::JS_EN_NUMERICS_TRANSLATIONS, file_get_contents($this->target . '/translations/numerics/en.js'));
+        $this->assertEquals(json_decode(self::JS_EN_NUMERICS_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/numerics/en.js')));
 
-        $this->assertEquals(self::JS_FR_NUMERICS_TRANSLATIONS, file_get_contents($this->target . '/translations/numerics/fr.js'));
+        $this->assertEquals(json_decode(self::JS_FR_NUMERICS_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/numerics/fr.js')));
 
-        $this->assertEquals(self::JS_CONFIG, file_get_contents($this->target . '/translations/config.js'));
+        $this->assertEquals(json_decode(self::JS_CONFIG), json_decode(file_get_contents($this->target . '/translations/config.js')));
 
-        $this->assertEquals(self::JSON_EN_MESSAGES_TRANSLATIONS, file_get_contents($this->target . '/translations/messages/en.json'));
+        $this->assertEquals(json_decode(self::JSON_EN_MESSAGES_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/messages/en.json')));
 
-        $this->assertEquals(self::JSON_FR_MESSAGES_TRANSLATIONS, file_get_contents($this->target . '/translations/messages/fr.json'));
+        $this->assertEquals(json_decode(self::JSON_FR_MESSAGES_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/messages/fr.json')));
 
-        $this->assertEquals(self::JSON_EN_NUMERICS_TRANSLATIONS, file_get_contents($this->target . '/translations/numerics/en.json'));
+        $this->assertEquals(json_decode(self::JSON_EN_NUMERICS_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/numerics/en.json')));
 
-        $this->assertEquals(self::JSON_FR_NUMERICS_TRANSLATIONS, file_get_contents($this->target . '/translations/numerics/fr.json'));
+        $this->assertEquals(json_decode(self::JSON_FR_NUMERICS_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/numerics/fr.json')));
 
-        $this->assertEquals(self::JSON_CONFIG, file_get_contents($this->target . '/translations/config.json'));
+        $this->assertEquals(json_decode(self::JSON_CONFIG), json_decode(file_get_contents($this->target . '/translations/config.json')));
 
     }
 
@@ -232,17 +232,17 @@ JSON;
             $this->assertFileNotExists($this->target . '/translations/' . $file);
         }
 
-        $this->assertEquals(self::JS_EN_MERGED_TRANSLATIONS, file_get_contents($this->target . '/translations/en.js'));
+        $this->assertEquals(json_decode(self::JS_EN_MERGED_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/en.js')));
 
-        $this->assertEquals(self::JS_FR_MERGED_TRANSLATIONS, file_get_contents($this->target . '/translations/fr.js'));
+        $this->assertEquals(json_decode(self::JS_FR_MERGED_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/fr.js')));
 
-        $this->assertEquals(self::JS_CONFIG, file_get_contents($this->target . '/translations/config.js'));
+        $this->assertEquals(json_decode(self::JS_CONFIG), json_decode(file_get_contents($this->target . '/translations/config.js')));
 
-        $this->assertEquals(self::JSON_EN_MERGED_TRANSLATIONS, file_get_contents($this->target . '/translations/en.json'));
+        $this->assertEquals(json_decode(self::JSON_EN_MERGED_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/en.json')));
 
-        $this->assertEquals(self::JSON_FR_MERGED_TRANSLATIONS, file_get_contents($this->target . '/translations/fr.json'));
+        $this->assertEquals(json_decode(self::JSON_FR_MERGED_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/fr.json')));
 
-        $this->assertEquals(self::JSON_CONFIG, file_get_contents($this->target . '/translations/config.json'));
+        $this->assertEquals(json_decode(self::JSON_CONFIG), json_decode(file_get_contents($this->target . '/translations/config.json')));
 
     }
 
@@ -276,15 +276,15 @@ JSON;
             $this->assertFileNotExists($this->target . '/translations/' . $file);
         }
 
-        $this->assertEquals(self::JS_EN_MESSAGES_TRANSLATIONS, file_get_contents($this->target . '/translations/messages/en.js'));
+        $this->assertEquals(json_decode(self::JS_EN_MESSAGES_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/messages/en.js')));
 
-        $this->assertEquals(self::JS_FR_MESSAGES_TRANSLATIONS, file_get_contents($this->target . '/translations/messages/fr.js'));
+        $this->assertEquals(json_decode(self::JS_FR_MESSAGES_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/messages/fr.js')));
 
-        $this->assertEquals(self::JS_EN_NUMERICS_TRANSLATIONS, file_get_contents($this->target . '/translations/numerics/en.js'));
+        $this->assertEquals(json_decode(self::JS_EN_NUMERICS_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/numerics/en.js')));
 
-        $this->assertEquals(self::JS_FR_NUMERICS_TRANSLATIONS, file_get_contents($this->target . '/translations/numerics/fr.js'));
+        $this->assertEquals(json_decode(self::JS_FR_NUMERICS_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/numerics/fr.js')));
 
-        $this->assertEquals(self::JS_CONFIG, file_get_contents($this->target . '/translations/config.js'));
+        $this->assertEquals(json_decode(self::JS_CONFIG), json_decode(file_get_contents($this->target . '/translations/config.js')));
 
     }
 
@@ -318,15 +318,15 @@ JSON;
             $this->assertFileNotExists($this->target . '/translations/' . $file);
         }
 
-        $this->assertEquals(self::JSON_EN_MESSAGES_TRANSLATIONS, file_get_contents($this->target . '/translations/messages/en.json'));
+        $this->assertEquals(json_decode(self::JSON_EN_MESSAGES_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/messages/en.json')));
 
-        $this->assertEquals(self::JSON_FR_MESSAGES_TRANSLATIONS, file_get_contents($this->target . '/translations/messages/fr.json'));
+        $this->assertEquals(json_decode(self::JSON_FR_MESSAGES_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/messages/fr.json')));
 
-        $this->assertEquals(self::JSON_EN_NUMERICS_TRANSLATIONS, file_get_contents($this->target . '/translations/numerics/en.json'));
+        $this->assertEquals(json_decode(self::JSON_EN_NUMERICS_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/numerics/en.json')));
 
-        $this->assertEquals(self::JSON_FR_NUMERICS_TRANSLATIONS, file_get_contents($this->target . '/translations/numerics/fr.json'));
+        $this->assertEquals(json_decode(self::JSON_FR_NUMERICS_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/numerics/fr.json')));
 
-        $this->assertEquals(self::JSON_CONFIG, file_get_contents($this->target . '/translations/config.json'));
+        $this->assertEquals(json_decode(self::JSON_CONFIG), json_decode(file_get_contents($this->target . '/translations/config.json')));
 
     }
 
@@ -350,11 +350,11 @@ JSON;
             $this->assertFileNotExists($this->target . '/translations/' . $file);
         }
 
-        $this->assertEquals(self::JS_EN_MERGED_TRANSLATIONS, file_get_contents($this->target . '/translations/en.js'));
+        $this->assertEquals(json_decode(self::JS_EN_MERGED_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/en.js')));
 
-        $this->assertEquals(self::JS_FR_MERGED_TRANSLATIONS, file_get_contents($this->target . '/translations/fr.js'));
+        $this->assertEquals(json_decode(self::JS_FR_MERGED_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/fr.js')));
 
-        $this->assertEquals(self::JS_CONFIG, file_get_contents($this->target . '/translations/config.js'));
+        $this->assertEquals(json_decode(self::JS_CONFIG), json_decode(file_get_contents($this->target . '/translations/config.js')));
 
     }
 
@@ -378,11 +378,11 @@ JSON;
             $this->assertFileNotExists($this->target . '/translations/' . $file);
         }
 
-        $this->assertEquals(self::JSON_EN_MERGED_TRANSLATIONS, file_get_contents($this->target . '/translations/en.json'));
+        $this->assertEquals(json_decode(self::JSON_EN_MERGED_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/en.json')));
 
-        $this->assertEquals(self::JSON_FR_MERGED_TRANSLATIONS, file_get_contents($this->target . '/translations/fr.json'));
+        $this->assertEquals(json_decode(self::JSON_FR_MERGED_TRANSLATIONS), json_decode(file_get_contents($this->target . '/translations/fr.json')));
 
-        $this->assertEquals(self::JSON_CONFIG, file_get_contents($this->target . '/translations/config.json'));
+        $this->assertEquals(json_decode(self::JSON_CONFIG), json_decode(file_get_contents($this->target . '/translations/config.json')));
 
     }
 }
